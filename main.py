@@ -151,7 +151,7 @@ def render_episodes():
     env = make_parallel_env(n, 9999)
     update_config(env, config)
 
-    model_path = "./results/mpe/{}/run0" # this is the path to your model
+    model_path = "/root/marl-copa/results/mpe/aqmix+coach+vi+ctr2+vi0.001/run900" # this is the path to your model
 
     # setup modules
     mac = Agent(config) # policy
@@ -386,5 +386,6 @@ def run():
 if __name__ == "__main__":
     #test()
     run()
+    #render_episodes()
     #expert()
     #random()
